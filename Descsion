@@ -1,0 +1,158 @@
+import java.util.Scanner;
+
+public class DescisionDhanush {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	//instatiate object
+		Scanner input = new Scanner(System.in);
+	
+		
+		
+		//Asks to input integer value and records it
+		System.out.println("Enter integer values");
+		
+		int num1 = input.nextInt();
+		int num2 = input.nextInt();
+		
+		//Asks to input Double Values and record it
+		
+		System.out.println("Enter Double Value");
+		
+		double num3 = input.nextDouble();
+		double num4 = input.nextDouble();
+	
+		
+	//Tell the user it will do the following operations
+		System.out.println("\nThe following operation will be performed on the integers you have inputted-\n \n-Adding \n-Subtracting \n-Multiplying \n-Dividing \n-Moding \n");
+		int sum = num1 +num2;
+	
+		//Addition of Integers
+		System.out.println("The sum of "+num1+" and "+num2+" is "+sum);
+		//The block of code which does the subtraction starts here 
+		if (num1>num2) {
+		//determines what to do based on which number is greater	
+			int	sum1 = num1-num2;
+			
+			System.out.println("The difference between " +num1 +" and " + num2 +" is " + sum1);
+		} else if (num1==num2) {
+			System.out.println("Subtracting these numbers will give you zero");
+		}
+		else {
+			int sum1 = num2-num1;
+					
+			System.out.println("The difference between " +num1 +" and " + num2 +" is " + sum1);
+		}
+		//End of Block of code for subtraction
+	
+		//Start of block of code for multiplication
+		if (num1==num2) {
+			
+			int sum2 = num1 * num2;
+			
+			System.out.println("The Square of "+num1+" is " + sum2);
+		} else  {
+			
+			int sum2 = num1 * num2;
+			System.out.println("The result of multiplying "+num1+" and "+num2 + " is "+ sum2);
+			
+		}
+		//end of block of code for multiplication
+		
+		//Start of division code block
+		if (num2==0) {
+			System.out.println("You cannot mod or divide by zero");
+		} else {
+			
+			int sum3 = num1/num2;
+			
+			System.out.printf(num1+ " divided by "+num2+" is " + sum3+"\n");
+		}
+		// end of division code block
+		
+		//start of moding code block
+		if (num2==0) {
+			System.out.println("You cannot mod or divide by zero\n");
+		} else {
+			
+			int sum4 = num1%num2;
+			
+			System.out.printf(num1+ " and "+num2+" modded is " + sum4+"\n");
+		}
+		//end of moding block and also the integer portion of the code
+		
+		
+		//Start of double portion of code
+		
+		System.out.println("The following operations will be performed on the double values inputted\n \n-Adding \n-Subtracting \n-Multiplying \n-Dividing \n-Moding \n");
+	
+		double sum5 = num3 + num4;
+		
+		//Addition of double values
+		System.out.printf("sum of double values is "+sum5+"\n");
+		
+		//Start of subtraction block
+		if (num3>num4) {
+			
+			double	sum6 = num3-num4;
+			
+			System.out.printf("The difference between " +num3 +" and " + num4 +" is " + sum6+"\n");
+		} else if (num3==num4) {
+			System.out.printf("Subtracting these numbers will give you zero\n");
+		}
+		else {
+			double sum6 = num4-num3;
+					
+			System.out.printf("The difference between " +num4 +" and " + num3 +" is " + sum6+"\n");
+		}
+	//end of subtraction block
+		
+		
+	//Start of Multiplication Block
+		if (num3==num4) {
+			
+			double sum7 = num4 * num3;
+			
+			System.out.printf("The Square of "+num4+" is " + sum7+"\n");
+		} else  {
+			
+			double sum7 = num4 * num3;
+			System.out.printf("The result of multiplying "+num3+" and "+num4 + " is "+ sum7+"\n");
+			
+		
+		}
+		
+	//End of multiplication block
+		
+		
+	//Start of division/Moding block
+		if (num4==0) {
+			System.out.printf("You cannot mod or divide by zero\n");
+		} else {
+			
+			double sum8 = num3/num4;
+			
+			System.out.printf(num3+ " divided by "+num4+" is " + sum8+"\n");
+		}
+
+		if (num4==0) {
+			System.out.printf("You cannot mod or divide by zero\n");
+		} else {
+			
+			double sum9= num3%num4;
+			
+			System.out.printf(num1+ " and "+num2+" modded is " + sum9+"\n");
+		//End of division/Moding block
+		}
+		
+	//Close Main Method
+	}
+	
+	
+	
+	
+	
+	
+	//Close program
+
+}
